@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ -n "$*" ]
-  then docker run -v $(pwd):/app -w /app haskell $*
+if [ "$*"="ghci" ]
+  then docker run -it --rm -v /$(pwd):/app -w /app haskell ghci
 else
   docker run -it haskell
 fi
