@@ -1,0 +1,2 @@
+# Exhaskell
+haskell exercise
